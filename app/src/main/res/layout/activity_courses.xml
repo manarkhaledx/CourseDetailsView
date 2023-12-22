@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".CoursesActivity">
+
+    <ImageView
+        android:id="@+id/iv_course"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/courseimg"
+        android:scaleType="fitXY"
+        android:src="@drawable/android"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_course"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/content_adroid_part_1_java_se_1_introduction_to_java_programming_overview_compiler_and_jvm_project_structure_hello_world_application_variables_and_data_types_operators_conditional_statements_if_switch_loops_for_while_do_while_2_basics_nested_loops_strings_arrays_functions_3_object_oriented_programming_classes_and_objects_encapsulation_and_data_hiding_inheritance_polymorphism_abstraction_abstract_classes_interfaces_4_collections_and_generics_sets_lists_threading_generics_class_and_methodpart_2_android_development_1_introduction_to_android_android_os_android_versions_os_architecture_application_component_android_studio_and_gradle_creating_hello_world_2_ui_components_layouts_constraints_layout_linear_layout_using_resources_drawables_strings_colors_and_styles_3_ui_components_ii_menu_support_localization_support_orientation_4_intents_and_activities_intents_intent_filters_5_fragments_what_is_fragments_fragment_manager_and_transaction_tablayout_navigationdrawer_bottomnavigation_6_dialogs_alert_dialog_display_dialog_with_items_custom_dialogs_dialog_fragment_7_data_storage_shared_preference_room_database_library_from_google_arch_components_8_threading_and_services_threading_service_and_intent_service_9_web_services_and_apis_what_is_json_how_to_make_network_calls_and_apis_consuming_web_apis_using_retrofit_and_gson_libraries_how_to_cache_apis_using_room_and_retrofit_together_what_is_repository_pattern_10_firebase_realtime_database_how_to_deal_with_realtime_database_11_notifications_simple_notification_firebase_to_push_notifications_one_signal_push_notifications_sdk"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

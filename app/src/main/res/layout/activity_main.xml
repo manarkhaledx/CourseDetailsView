@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_FullStack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonColor"
+        android:onClick="onCourseClick"
+        android:paddingVertical="13dp"
+        android:text="@string/fullstack_course"
+        android:textSize="17sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_FullStack"
+        app:layout_constraintStart_toStartOf="@+id/iv_FullStack"
+        app:layout_constraintTop_toBottomOf="@+id/iv_FullStack"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <ImageView
+        android:id="@+id/iv_android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/android"
+        app:layout_constraintBottom_toTopOf="@+id/btn_android"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonColor"
+        android:onClick="onCourseClick"
+        android:paddingVertical="13dp"
+        android:text="@string/android_course"
+        android:textSize="17sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_IOS"
+        app:layout_constraintEnd_toEndOf="@+id/iv_android"
+        app:layout_constraintStart_toStartOf="@+id/iv_android"
+        app:layout_constraintTop_toBottomOf="@+id/iv_android" />
+
+    <ImageView
+        android:id="@+id/iv_FullStack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fullstack"
+        android:layout_marginHorizontal="20dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/btn_FullStack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_IOS"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/iv_IOS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ios"
+        android:layout_marginHorizontal="20dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/btn_IOS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_android"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_IOS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonColor"
+        android:onClick="onCourseClick"
+        android:paddingVertical="13dp"
+        android:text="@string/ios_course"
+        android:textSize="17sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_FullStack"
+        app:layout_constraintEnd_toEndOf="@+id/iv_IOS"
+        app:layout_constraintStart_toStartOf="@+id/iv_IOS"
+        app:layout_constraintTop_toBottomOf="@+id/iv_IOS" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
